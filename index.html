@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CG nro°75</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      background: linear-gradient(135deg, #fff9c4, #b3e5fc, #c8e6c9, #ffcdd2);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #222;
+    }
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    header { 
+      text-align: center; 
+      color: white;
+      position: relative;
+    }
+    header img.fullscreen {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      display: block;
+    }
+    header h1 {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2.5em;
+      background: rgba(0,0,0,0.5);
+      padding: 15px 25px;
+      border-radius: 10px;
+    }
+    section { 
+      margin: 40px auto; 
+      max-width: 900px; 
+      background: rgba(255, 255, 255, 0.9); 
+      padding: 20px; 
+      border-radius: 12px; 
+    }
+    footer { 
+      text-align: center; 
+      margin-top: 40px; 
+      padding: 10px; 
+      background: rgba(255, 255, 255, 0.8);
+      font-size: 0.9em; 
+      color: gray; 
+    }
+    /* Galería con subtítulos */
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .item {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    .item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .item h3 {
+      margin: 10px 0 5px;
+      color: #2e5c2b;
+    }
+    .item p {
+      padding: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Imagen grande de portada -->
+    <img src="carpas.jpeg" alt="Imagen de portada" class="fullscreen">
+    <h1>Comunidad Guía Nuestra Señora del Carmen 🌿</h1>
+  </header>
+
+  <section>
+    <!-- Imagen comunitaria debajo del título -->
+    <img src="comunitaria.jpeg" alt="Imagen comunitaria" style="width:100%; border-radius:12px; margin-bottom:20px;">
+    <h2>¿Cómo empezó la comunidad?</h2>
+    <p>En el año 1974 se crea la comunidad guía nuestra señora del carmen y es la segunda de la zona. Siendo la comunidad número setenta y cinco. Estaba conformada por una guía del clan de la pequeña obra y cinco guías de entre diez y catorce años. No habia ninguna rama formada, todas eran parte de la patrulla horneros</p>
+    <p>Para el 1981 ya existian las ramas alitas, caravana, solar y clan. Y en el 1994 se creo la tribu Heyque leufú, que significa rio sauce.</p>
+  </section>
+
+  <section>
+    <h2>Tradiciones Comunitarias</h2>
+    <div class="galeria">
+      <div class="item">
+        <h3>El Bagre de Oro</h3>
+        <img src="bagre.jpeg" alt="El Bagre de Oro">
+        <p>Es una tradición que se hace en los campamentos, donde las guías crean canciones y competiten por premios, como si fuera un festival de música.</p>
+      </div>
+      <div class="item">
+        <h3>La Parrilla Guía</h3>
+        <img src="parrilla guia.jpeg" alt="La Parrilla Guia">
+        <p>Es una competencia en la cual se les da a las ramas deberan cocinar un menú específico en un tiempo acotado. Al finalizar el tiempo el jurado, que pueden ser los papás de cocina o invitados, decidirán qué rama ganará el premio.</p>
+      </div>
+      <div class="item">
+        <h3>El Zorro</h3>
+        <img src="zorro.jpeg" alt="El Zorro">
+        <p>Una actividad que se realiza en los campamentos de verano, donde tres guías o más realizan travesuras llamadas misiones procurando no ser vistas. Al final del campamento se hace el juicio en donde las guías que sospechan de otras pueden arriesgarse a ganar el honor de haber descubierto al zorro o una prenda por confundirse.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Encontranos en:</h2>
+    <p><a href="https://www.google.com/maps/search/?api=1&query=Rawson+y+Bermudez+Bahia+Blanca" target="_blank">Rawson y Bermudez - Bahía Blanca</a></p>
+    <p><a href="https://instagram.com/comunidadguia75" target="_blank">@comunidadguia75</a></p>
+  </section>
+
+  <footer>
+    © 2025 Nuestra Señora del Carmen
+  </footer>
+</body>
+</html>
